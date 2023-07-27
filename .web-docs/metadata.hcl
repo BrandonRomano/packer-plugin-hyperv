@@ -2,11 +2,11 @@
 # https://github.com/hashicorp/integration-template#metadata-configuration
 integration {
   name = "Hyper-V"
-  description = "TODO"
+  description = "The Hyper-V plugin can be used with HashiCorp Packer to create custom images from Hyper-V."
   identifier = "packer/BrandonRomano/hyperv"
   component {
     type = "builder"
-    name = "Hyper-V Builder (from a vmcx)"
+    name = "Hyper-V VMCX"
     slug = "vmcx"
   }
   component {
