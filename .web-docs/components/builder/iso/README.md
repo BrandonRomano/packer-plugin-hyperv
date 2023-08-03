@@ -303,6 +303,9 @@ created, must be empty prior to running the builder. By default this is
   disable dynamic memory and have at least 4GB of RAM assigned to the
   virtual machine.
 
+- `enable_tpm` (bool) - If true enable a virtual TPM for the
+  virtual machine. This defaults to false.
+
 - `temp_path` (string) - The location under which Packer will create a directory to house all the
   VM files and folders during the build. By default `%TEMP%` is used
   which, for most systems, will evaluate to
@@ -375,7 +378,9 @@ referenced will be available in your builder.
 
 Example usage from a builder:
 
-	`wget http://{{ .HTTPIP }}:{{ .HTTPPort }}/foo/bar/preseed.cfg`
+```
+wget http://{{ .HTTPIP }}:{{ .HTTPPort }}/foo/bar/preseed.cfg
+```
 
 <!-- End of code generated from the comments of the HTTPConfig struct in multistep/commonsteps/http_config.go; -->
 
