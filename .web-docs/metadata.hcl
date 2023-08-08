@@ -3,7 +3,7 @@
 integration {
   name = "Hyper-V"
   description = "The Hyper-V plugin can be used with HashiCorp Packer to create custom images from Hyper-V."
-  identifier = "packer/BrandonRomano/hyperv"
+  identifier = "packer/hashicorp/hyperv"
   component {
     type = "builder"
     name = "Hyper-V VMCX"
